@@ -7,12 +7,12 @@
 
 # with the help of cs50 library
 
-y = int(input("y: "))
-z = int(input("z: "))
+s = int(input("s: "))
+t = int(input("t: "))
 
-print(y + z)
+print(s + t)
 
-# without help of cs50 library we use int & input so the integers can behave as int.
+# without help of cs50 library we use int & input so the integers can behave as int..
 
 
 
