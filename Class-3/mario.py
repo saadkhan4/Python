@@ -10,23 +10,19 @@ while True:                  # there is no do while loop in python so this is fo
 for i in range(n):
     print("#")   
 
-
 # ^^^ horizontal method for Printing(#).^^^
 # bunch of ways here to do this.
 
 print("?" * 4)      # easy way.
 
 
-
-
-# ^^^^^ now nested loop to print 3x3 block .^^^^^
+# # ^^^^^ now nested loop to print 3x3 block .^^^^^
 for i in range(3):
     for j in range(3):
         print("#" , end="")
     print()    
-
-
-# this way too
+   
+# # this way too
 
 for i in range(3):
     print("#" * 3)     

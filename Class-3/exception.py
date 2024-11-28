@@ -14,3 +14,21 @@ def main():
     print(x + y)
 
 main()       
+
+
+
+
+def get_int(prompt):
+   while True:
+      try:
+         return int(input(prompt))
+      except ValueError:
+         pass
+      
+def main():
+   x = int(input("x: "))
+   y = int(input("y: "))
+
+   print(x - y)
+
+main()        

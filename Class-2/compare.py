@@ -10,7 +10,8 @@ if x < y:
 elif x > y:                         
     print("x is greater than y")
 else:
-    print("x is equal to y")    
+    print("x is equal to y")   
+     
  
 # now we are comparing strings. 
 
@@ -21,3 +22,4 @@ if s == t:
     print("Same")
 else:
     print("Different")
+    
