@@ -23,3 +23,4 @@ if s == t:
 else:
     print("Different")
     
+# this is how you compare strings without strcmp in python.    
