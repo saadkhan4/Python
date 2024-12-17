@@ -1,5 +1,2 @@
-answer = input("What's your name? ")
-for i in answer :
- print(f"hello , {answer}")
-
-
+answer = input("what's your name? ")
+print(f"hello ,{answer}")
