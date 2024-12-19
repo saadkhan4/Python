@@ -1,26 +1,36 @@
-# e = int(input("e: "))
-# f = int(input("f: "))
+from cs50 import get_int, get_string
 
-# s = e / f
-# print(s)
+x = get_int("x: ")
+y = get_int("y: ")
+
+print(x + y)
 
 
-# o = int(input("o: "))
-# r = int(input("r: "))
+r = int(input("r: "))
+s = int(input("s: "))
 
-# s = o / r
-# print(f"{s:.30}")
+print(r + s)
 
-from cs50 import get_string
 
-x = get_string("what's x? ")
-y = get_string("what's y? ")
+t = int(input("t: "))
+y = int(input("y: "))
 
-if x < y:
-    print("x is less than y")
-elif x > y:
-    print("x is greater than y")
+z = (t / y)
+print(z)
+
+
+y = int(input("y: "))
+u = int(input("u: "))
+
+p = y / u
+print(f"{p:.80f}")
+
+s = get_string("what's s? ")
+e = get_string("what's e? ")
+
+if s < e:
+    print("s is less than e")
+elif s > e:
+    print("s is greater than e")
 else:
-    print("x is equal to y")     
-
-
+    print("s is equal to e")
