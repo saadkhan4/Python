@@ -34,3 +34,6 @@ elif s > e:
     print("s is greater than e")
 else:
     print("s is equal to e")
+
+answer = get_string("what's your name? ")
+print(f"hello , {answer}")
