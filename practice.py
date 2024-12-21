@@ -1,39 +1,28 @@
-from cs50 import get_int, get_string
+# answer = input("what's your name? ")
+# print(f"hello ,{answer}")
 
-x = get_int("x: ")
-y = get_int("y: ")
-
-print(x + y)
+# from cs50 import get_int
 
 
-r = int(input("r: "))
-s = int(input("s: "))
+# x = int(get_int("x: "))
+# y = int(get_int("y: "))
 
-print(r + s)
-
-
-t = int(input("t: "))
-y = int(input("y: "))
-
-z = (t / y)
-print(z)
+# print(x + y)
 
 
-y = int(input("y: "))
-u = int(input("u: "))
+# u = int(input("u: "))
+# b = int(input("b: "))
 
-p = y / u
-print(f"{p:.80f}")
+# t = u / b
+# print(f"{t:.40f}")
 
-s = get_string("what's s? ")
-e = get_string("what's e? ")
+from cs50 import get_int
 
-if s < e:
-    print("s is less than e")
-elif s > e:
-    print("s is greater than e")
-else:
-    print("s is equal to e")
+s = get_int("what's s? ")
+t = get_int("what's t? ")
 
-answer = get_string("what's your name? ")
-print(f"hello , {answer}")
+if s < t:
+    print("s is less than t? ")
+
+   
+    
