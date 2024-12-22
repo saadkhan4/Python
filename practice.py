@@ -16,13 +16,12 @@
 # t = u / b
 # print(f"{t:.40f}")
 
-from cs50 import get_int
+answer = input("what's your name? ")
+print(f"hello , {answer}")
 
-s = get_int("what's s? ")
-t = get_int("what's t? ")
 
-if s < t:
-    print("s is less than t? ")
+x = int(input("x: "))
+y = int(input("y: "))
 
-   
-    
+print(x + y)
+
