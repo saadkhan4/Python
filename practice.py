@@ -20,8 +20,8 @@ answer = input("what's your name? ")
 print(f"hello , {answer}")
 
 
-x = int(input("x: "))
-y = int(input("y: "))
+s = int(input("s: "))
+t = int(input("t: "))
 
-print(x + y)
+print(s + t)
 
