@@ -15,3 +15,25 @@ special()
 
 
 
+
+def people():
+    people = 1
+    while people < 3:
+        people += 1
+        print("hello people")
+
+
+people()
+
+
+
+def house():
+    for house in range(3):
+        print("in order wise")
+
+
+house()        
+
+
+
+
