@@ -41,3 +41,13 @@ print(f"hello , {answer}")
 
 
 
+
+
+def ribbon():
+    ribbon = 0
+    while ribbon < 3:
+        ribbon += 1
+    print("hello , world")
+
+
+ribbon()    
