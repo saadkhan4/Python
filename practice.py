@@ -40,3 +40,6 @@ else:
     print("finally completed")    
 
 
+
+answer = get_string("what's your name? ")
+print(f"hello , {answer}")
