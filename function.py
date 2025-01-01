@@ -74,11 +74,12 @@ orange()
 
 
 
-# def dog():
-#     dog = 0
-#     while dog < 3:
-#         dog += 1
-#     print("he is in the yard")
+def system():
+    system = 0
+    while system < 3:
+        system += 1
+        print("hello system")
 
 
-# dog()    
+
+system()    
