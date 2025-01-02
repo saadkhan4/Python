@@ -1,67 +1,88 @@
 from cs50 import get_string , get_int
 
-answer = get_string("what's your name? ")
-print(f"hello , {answer}")
-
+# answer = input("what's your name? ")
+# print(f"hello , {answer}")
 
 
 # answer = input("what's your name? ")
 # print(f"hello , {answer}")
 
 
+# x = get_int("x: ")
+# y = get_int("y: ")
 
-y = get_int("y: ")
-g = get_int("g: ")
+# print(x + y)
 
+# r = int(input("r: "))
+# f = int(input("f: "))
 
-print(y + g)
-
-u = int(input("u: "))
-p = int(input("p: "))
-
-print(u + p)
+# print(r + f)
 
 
-y = int(input("y: "))
-e = int(input("e: "))
+# o = int(input("o: "))
+# p = int(input("p: "))
 
+# z = o / p
+# print(f"{z:.50f}")
 
-print(y + e)
-
-# q = int(input("q: "))
+# x = int(input("x: "))
 # y = int(input("y: "))
 
-# b = (q / y)
-# print(f"{b:.50f}")
+# if (x < y):
+#     print("x is less than y")
 
-e = get_int("what's e? ")
-f = get_int("what's f? ")
+# elif (x > y):
+#     print("x is greater than y")
 
-if (e < f):
-    print("e is less than f")
-
-elif (e > f):
-    print("e is greater than f")
-
-else:
-    print("e is equal to y")
-
-    
-
-
-
-
-
-
-
-
-
-# for x in range(3):
-#     print(x)
 # else:
-#     print("finally completed")    
+#     print("x is equal to y")        
+
+
+# def system():
+#     print("system is good")
+
+
+# system()    
+
+
+# def system():
+#     for system in range(3):
+#         print("system is good")
 
 
 
-# answer = get_string("what's your name? ")
-# print(f"hello , {answer}")
+# system()
+
+
+# def system():
+#     system = 0
+#     while system < 3:
+#         system += 1
+#         print("system is good")
+
+
+
+# system()
+
+
+
+# def system():
+#     while True:
+#         print("system is good")
+
+
+
+# system()
+
+
+
+scores = []
+for i in range(3):
+    score = get_int("Score: ")
+    scores.append(scores)
+
+average = sum(score) / len(score)
+print(f"Average: {average}")   
+
+
+
