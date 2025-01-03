@@ -1,48 +1,46 @@
 from cs50 import get_string , get_int
 
-# answer = input("what's your name? ")
+# answer = get_string("what's your name? ")
 # print(f"hello , {answer}")
 
 
 # answer = input("what's your name? ")
 # print(f"hello , {answer}")
 
+
+# e = get_int("e: ")
+# f = get_int("f: ")
+
+# print(e + f)
+
+# f = int(input("f: "))
+# d = int(input("d: "))
+
+# print(f + d)
+
+# d = int(input("d: "))
+# t = int(input("t: "))
+
+# q = d / t
+# print(f"{q:.34f}")
 
 # x = get_int("x: ")
-# y = get_int("y: ")
+# r = get_int("r: ")
 
-# print(x + y)
+# if (x < r):
+#     print("x is less than r")
 
-# r = int(input("r: "))
-# f = int(input("f: "))
-
-# print(r + f)
-
-
-# o = int(input("o: "))
-# p = int(input("p: "))
-
-# z = o / p
-# print(f"{z:.50f}")
-
-# x = int(input("x: "))
-# y = int(input("y: "))
-
-# if (x < y):
-#     print("x is less than y")
-
-# elif (x > y):
-#     print("x is greater than y")
-
-# else:
-#     print("x is equal to y")        
-
+# elif (x > r):
+#     print("x is greater than r")
+    
+# else :
+#     print("x is equal to r")        
 
 # def system():
 #     print("system is good")
 
 
-# system()    
+# system()
 
 
 # def system():
@@ -50,9 +48,7 @@ from cs50 import get_string , get_int
 #         print("system is good")
 
 
-
 # system()
-
 
 # def system():
 #     system = 0
@@ -62,27 +58,15 @@ from cs50 import get_string , get_int
 
 
 
-# system()
-
-
-
-# def system():
-#     while True:
-#         print("system is good")
-
-
-
-# system()
-
+# system()        
 
 
 scores = []
 for i in range(3):
     score = get_int("Score: ")
-    scores.append(scores)
+    scores.append(score)
 
-average = sum(score) / len(score)
-print(f"Average: {average}")   
-
+average = sum(scores) / len(scores)
+print(f"Average: {average}")    
 
 
