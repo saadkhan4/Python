@@ -54,13 +54,20 @@ from cs50 import get_int , get_string
 # print(f"average: {average}")    
 
 
-names = ["Iqbal" , "Hamza" ,"Ali"]
-name = get_string("Name: ")
-if name in names:
-    print("found")
+# names = ["Iqbal" , "Hamza" ,"Ali"]
+# name = get_string("Name: ")
+# if name in names:
+#     print("found")
 
-else:
-    print("not found")
+# else:
+#     print("not found")
+
+def system():
+    print("system is good")
+
+
+
+system()    
 
 
 
