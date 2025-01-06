@@ -1,73 +1,90 @@
-from cs50 import get_int , get_string
+from cs50 import get_string, get_int
 
-# answer = get_string("what's your name? ")
-# print(f"hello , {answer}")
+answer = get_string("what's your name? ")
+print(f"hello , {answer}")
 
-# answer = input("what's your name? ")
-# print(f"hello , {answer}")
+answer = input("what's your name? ")
+print(f"hello , {answer}")
 
+x = get_int("x: ")
+t = get_int("t: ")
 
-# x = get_int("x: ")
-# y = get_int("y: ")
+print(x + t)
 
-# print(x + y)
+e = int(input("e: "))
+p = int(input("p: "))
 
-# x = int(input("x: "))
-# y = int(input("y: "))
+print(e + p)
 
-# print(x + y)
+d = int(input("d: "))
+p = int(input("p: "))
 
-# s = int(input("s: "))
-# u = int(input("u: "))
+y = d / p
+print(y)
 
-# z = s / u
-# print(f"{z:.50f}")
+o = int(input("o: "))
+l = int(input("l: "))
 
-# def system():
-#     print("system is good")
+t = o / l
+print(f"{t:.50f}")
 
-
-# system()
-
-# def system():
-#     for system in range(4):
-#         print("system is good")
+def obstruction():
+    print("Access Denied")
 
 
-# system()        
+obstruction()    
 
-# def system():
-#     system = 0
-#     while system < 3:
-#         system += 1
-#         print("system is good")
+def obstruction():
+    for obstruction in range(5):
+        print("Access Denied")
 
 
-# system()        
+obstruction()        
 
-# scores = []
-# for i in range(3):
-#     score = get_int("Score: ")
-#     scores.append(score)
-
-# average = sum(scores) / len(scores)
-# print(f"average: {average}")    
+def obstruction():
+    obstruction = 0
+    while obstruction < 5:
+        obstruction += 1
+        print("Access Denied")
 
 
-# names = ["Iqbal" , "Hamza" ,"Ali"]
-# name = get_string("Name: ")
-# if name in names:
-#     print("found")
 
-# else:
-#     print("not found")
+obstruction()        
+
+
+scores = []
+for i in range(3):
+    player = get_int("Scores: ")
+    scores.append(player)
+
+average = sum(scores) / len(scores)
+print(f"Average: {average}")    
+
+names = ["Marshall" , "Tobey" , "Jessica"]
+
+name = input("Name: ")
+if name in names:
+    print("found")
+
+else:
+    print("not found")    
+
+def main():
+    for i in range(3):
+        system()
+
 
 def system():
-    print("system is good")
+    print("System malfunctioning")        
 
 
 
-system()    
+main()    
 
 
+def greet(name):
+    print(f"Hello , {name}")
+
+
+greet("Jessica")    
 
