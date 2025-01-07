@@ -1,4 +1,4 @@
-from cs50 import get_string, get_int
+from cs50 import get_int, get_string
 
 answer = get_string("what's your name? ")
 print(f"hello , {answer}")
@@ -6,85 +6,81 @@ print(f"hello , {answer}")
 answer = input("what's your name? ")
 print(f"hello , {answer}")
 
-x = get_int("x: ")
-t = get_int("t: ")
+p = get_int("p: ")
+o = get_int("o: ")
 
-print(x + t)
+print(o + p)
 
-e = int(input("e: "))
-p = int(input("p: "))
-
-print(e + p)
-
-d = int(input("d: "))
-p = int(input("p: "))
-
-y = d / p
-print(y)
-
-o = int(input("o: "))
 l = int(input("l: "))
+p = int(input("p: "))
 
-t = o / l
-print(f"{t:.50f}")
+print(l + p)
 
-def obstruction():
-    print("Access Denied")
+j = int(input("j: "))
+b = int(input("b: "))
 
+p = j / b
+print(p)
 
-obstruction()    
+k = int(input("k: "))
+p = int(input("p: "))
 
-def obstruction():
-    for obstruction in range(5):
-        print("Access Denied")
+l = k / p
+print(f"{l:.40f}")
 
-
-obstruction()        
-
-def obstruction():
-    obstruction = 0
-    while obstruction < 5:
-        obstruction += 1
-        print("Access Denied")
+def position():
+    print("Fixed position")
 
 
+position()    
 
-obstruction()        
+def position():
+    for position in range(3):
+        print("Fixed position")
 
+
+position()        
+
+def position():
+    position = 0
+    while position < 3:
+        position += 1 
+        print("Fixed position")
+
+
+position()
 
 scores = []
 for i in range(3):
-    player = get_int("Scores: ")
+    player = get_int("Score: ")
     scores.append(player)
 
 average = sum(scores) / len(scores)
-print(f"Average: {average}")    
+print(f"Average: {average}")  
 
-names = ["Marshall" , "Tobey" , "Jessica"]
 
-name = input("Name: ")
+names = {"Ali","Sara" ,"Hamza"}
+name = get_string("Names: ")
+
 if name in names:
-    print("found")
+    print("Found")
 
 else:
-    print("not found")    
-
-def main():
-    for i in range(3):
-        system()
-
+    print("Not Found")    
 
 def system():
-    print("System malfunctioning")        
+    for i in range(3):
+        obstruction()
 
 
+def obstruction():
+    print("System Repeated")        
 
-main()    
 
-
+system()    
+    
 def greet(name):
-    print(f"Hello , {name}")
+    print(f"hello ,{name}")
 
 
-greet("Jessica")    
-
+greet("Natasha")   
