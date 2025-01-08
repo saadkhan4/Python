@@ -1,86 +1,105 @@
-from cs50 import get_int, get_string
+from  cs50 import get_string , get_int
+# answer = get_string("what's your name? ")
+# print(f"hello , {answer}")
 
-answer = get_string("what's your name? ")
-print(f"hello , {answer}")
+# answer = input("what's your age? ")
+# print(f"your age is {answer}")
 
-answer = input("what's your name? ")
-print(f"hello , {answer}")
+# u = get_int("u: ")
+# p = get_int("p: ")
 
-p = get_int("p: ")
-o = get_int("o: ")
+# print(u + p)
 
-print(o + p)
+# i = int(input("i: "))
+# o = int(input("o: "))
 
-l = int(input("l: "))
-p = int(input("p: "))
+# print(i - o)
 
-print(l + p)
+# h = int(input("h: "))
+# i = int(input("i: "))
 
-j = int(input("j: "))
-b = int(input("b: "))
+# s = h / i
+# print(s)
 
-p = j / b
-print(p)
+# y = int(input("y: "))
+# k = int(input("k: "))
 
-k = int(input("k: "))
-p = int(input("p: "))
+# d = y / k 
+# print(f"{d:.80f}")
 
-l = k / p
-print(f"{l:.40f}")
-
-def position():
-    print("Fixed position")
-
-
-position()    
-
-def position():
-    for position in range(3):
-        print("Fixed position")
+# def system():
+#     print("System is corrupted")
 
 
-position()        
 
-def position():
-    position = 0
-    while position < 3:
-        position += 1 
-        print("Fixed position")
+# system()    
 
-
-position()
-
-scores = []
-for i in range(3):
-    player = get_int("Score: ")
-    scores.append(player)
-
-average = sum(scores) / len(scores)
-print(f"Average: {average}")  
+# def system():
+#     for system in range(3):
+#         print("system is corrupted")
 
 
-names = {"Ali","Sara" ,"Hamza"}
-name = get_string("Names: ")
+# system()        
 
-if name in names:
-    print("Found")
-
-else:
-    print("Not Found")    
-
-def system():
-    for i in range(3):
-        obstruction()
+# def system():
+#     while True:
+#         print("system is corrupted")
 
 
-def obstruction():
-    print("System Repeated")        
+# system()       
+
+# def system():
+#     system = 0 
+#     while system < 3:
+#         system += 1
+#         print("system is corrupted")
 
 
-system()    
-    
+# system()        
+
+# names = ["Ali","Hamza","Jessica"]
+
+# name = get_string("Name: ")
+# if name in names:
+#     print("found")
+
+# else:
+#     print("not found")
+
+# x = int(input("x: "))
+# u = int(input("u: "))
+
+# if (x < u):
+#     print("x is less than u")
+
+# elif (x > u):
+#     print("x is greater than u")
+
+# else:
+#     print("x is equal to u")        
+
+
+# scores = []
+# for i in range(4):
+#     player = get_int("Score: ")
+#     scores.append(player)
+
+# average = sum(scores) / len(scores)
+# print(f"Average: {average}")    
+
+# def function():
+#     for i in range(3):
+#         system()
+
+
+# def system():
+#     print("System is corrupted")
+
+
+# function()
+
 def greet(name):
     print(f"hello ,{name}")
 
 
-greet("Natasha")   
+greet("Emily")    
