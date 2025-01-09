@@ -102,4 +102,7 @@ def greet(name):
     print(f"hello ,{name}")
 
 
-greet("Emily")    
+greet("Emily")   
+
+def system():
+    print("System is corrupted")
