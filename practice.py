@@ -106,3 +106,6 @@ greet("Emily")
 
 def system():
     print("System is corrupted")
+
+
+system()
