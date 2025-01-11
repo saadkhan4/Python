@@ -1,111 +1,109 @@
-from  cs50 import get_string , get_int
-# answer = get_string("what's your name? ")
-# print(f"hello , {answer}")
+from cs50 import get_string , get_int
 
-# answer = input("what's your age? ")
-# print(f"your age is {answer}")
+answer = get_string("what's your name? ")
+print(f"hello , {answer}")
 
-# u = get_int("u: ")
-# p = get_int("p: ")
+answer = input("what's your number? ")
+print(f"hello , {answer}")
+          
 
-# print(u + p)
+r = get_int("r: ")
+o = get_int("o: ") 
 
-# i = int(input("i: "))
-# o = int(input("o: "))
+print(r + o)
 
-# print(i - o)
+j = int(input("j: "))
+p = int(input("p: "))
 
-# h = int(input("h: "))
-# i = int(input("i: "))
+print(j + p)
 
-# s = h / i
-# print(s)
+u = int(input("u: "))
+y = int(input("y: "))
 
-# y = int(input("y: "))
-# k = int(input("k: "))
+f = u / y
+print(f)
 
-# d = y / k 
-# print(f"{d:.80f}")
+q = int(input("q: "))
+l = int(input("l: "))
 
-# def system():
-#     print("System is corrupted")
+j = q / l
+print(f"{j:.40f}")
 
+x = get_int("what's x? ")
+o = get_int("what's y? ")
 
+if (x < o):
+    print("x is less than o")
 
-# system()    
+elif (x > o):
+    print("x is greater than o")
 
-# def system():
-#     for system in range(3):
-#         print("system is corrupted")
+else:
+    print("x and o are equal")
 
-
-# system()        
-
-# def system():
-#     while True:
-#         print("system is corrupted")
-
-
-# system()       
-
-# def system():
-#     system = 0 
-#     while system < 3:
-#         system += 1
-#         print("system is corrupted")
+def sort_list():
+    print("list has been sorted")
 
 
-# system()        
+sort_list()
 
-# names = ["Ali","Hamza","Jessica"]
-
-# name = get_string("Name: ")
-# if name in names:
-#     print("found")
-
-# else:
-#     print("not found")
-
-# x = int(input("x: "))
-# u = int(input("u: "))
-
-# if (x < u):
-#     print("x is less than u")
-
-# elif (x > u):
-#     print("x is greater than u")
-
-# else:
-#     print("x is equal to u")        
+def sort_list():
+    while True:
+        print("list has been sorted")
 
 
-# scores = []
-# for i in range(4):
-#     player = get_int("Score: ")
-#     scores.append(player)
 
-# average = sum(scores) / len(scores)
-# print(f"Average: {average}")    
+sort_list()        
 
-# def function():
-#     for i in range(3):
-#         system()
+def sort_list():
+    for i in range(3):
+        print("list has been sorted")
 
 
-# def system():
-#     print("System is corrupted")
+sort_list()        
+
+def sort_list():
+    sort_list = 0
+    while sort_list < 3:
+        sort_list += 1
+        print("list has been sorted")
 
 
-# function()
+sort_list()
 
-def greet(name):
-    print(f"hello ,{name}")
+names = ["Jessica" , "Dutch" , "Lily"]
+name = get_string("Names: ")
 
+if name in names:
+    print("found")
 
-greet("Emily")   
+else:
+    print("not found")
+
+scores = []
+for i in range(3):
+    player = get_int("Score: ")
+    scores.append(player)
+
+average = sum(scores) / len(scores)
+print(f"Average: {average}")    
 
 def system():
-    print("System is corrupted")
+    for i in range(3):
+        load_file()
+     
+
+
+def load_file():
+    print("system is corrupted")
 
 
 system()
+
+def greet(name):
+    print(f"hello, {name}")
+
+
+
+greet("Natasha")    
+
