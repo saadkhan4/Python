@@ -1,84 +1,88 @@
-from cs50 import get_string , get_int
+from cs50 import get_string, get_int
 
 answer = get_string("what's your name? ")
 print(f"hello , {answer}")
 
-answer = input("what's your number? ")
-print(f"hello , {answer}")
-          
+answer = input("what's your age? ")
+print(f"I'm {answer}")
 
 r = get_int("r: ")
-o = get_int("o: ") 
+k = get_int("k: ")
 
-print(r + o)
+print(r + k)
 
-j = int(input("j: "))
-p = int(input("p: "))
+e = int(input("e: "))
+h = int(input("h: "))
 
-print(j + p)
+print(e * h)
 
-u = int(input("u: "))
-y = int(input("y: "))
+g = int(input("g: "))
+o = int(input("o: "))
 
-f = u / y
+f = g / o
 print(f)
 
-q = int(input("q: "))
-l = int(input("l: "))
+k = int(input("k: "))
+p = int(input("p: "))
 
-j = q / l
-print(f"{j:.40f}")
+d = k / p
+print(f"{d:.40f}")
 
-x = get_int("what's x? ")
-o = get_int("what's y? ")
+g = int(input("g: "))
+d = int(input("d: "))
 
-if (x < o):
-    print("x is less than o")
+print(g - d)
 
-elif (x > o):
-    print("x is greater than o")
+g = get_int("what's g? ")
+u = get_int("what's u? ")
+
+if (g < u):
+    print("g is less than u")
+
+elif (g > u):
+    print("g is greater than u")
 
 else:
-    print("x and o are equal")
+    print("g and u are equal")        
 
-def sort_list():
-    print("list has been sorted")
+def sort_array():
+    print("Array has been sorted")
 
+sort_array()    
 
-sort_list()
-
-def sort_list():
+def sort_array():
     while True:
-        print("list has been sorted")
+        print("Array has been sorted")
 
 
+sort_array()        
 
-sort_list()        
-
-def sort_list():
+def on_button_click():
     for i in range(3):
-        print("list has been sorted")
+        print("to this when clicked")
 
 
-sort_list()        
-
-def sort_list():
-    sort_list = 0
-    while sort_list < 3:
-        sort_list += 1
-        print("list has been sorted")
+on_button_click()        
 
 
-sort_list()
+def on_button_click():
+    on_button_click = 0
+    while on_button_click < 3:
+        on_button_click += 1
+        print("to this when clicked")
 
-names = ["Jessica" , "Dutch" , "Lily"]
-name = get_string("Names: ")
+
+on_button_click()
+
+
+names = ["Jess","Jennifer","Jen"]
+name = get_string("Name: ")
 
 if name in names:
     print("found")
 
 else:
-    print("not found")
+    print("not found")    
 
 scores = []
 for i in range(3):
@@ -86,24 +90,21 @@ for i in range(3):
     scores.append(player)
 
 average = sum(scores) / len(scores)
-print(f"Average: {average}")    
+print(f"Average: {average}")
+
+def main():
+    for i in range(3):
+        system()
+
+
 
 def system():
-    for i in range(3):
-        load_file()
-     
+    print("system is malfunctioning") 
 
 
-def load_file():
-    print("system is corrupted")
-
-
-system()
+main()           
 
 def greet(name):
-    print(f"hello, {name}")
+    print(f"hello {name}")
 
-
-
-greet("Ella")    
-
+greet("Jen")    
