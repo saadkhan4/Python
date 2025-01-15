@@ -1,83 +1,72 @@
-from cs50 import get_string, get_int
+from cs50 import get_int, get_string
 
 answer = get_string("what's your name? ")
+print(f"hello ,{answer}")
+
+answer = input("what's your name? ")
 print(f"hello , {answer}")
 
-answer = input("what's your age? ")
-print(f"I'm {answer}")
+o = get_int("o: ")
+p = get_int("p: ")
 
-r = get_int("r: ")
-k = get_int("k: ")
+print(o + p)
 
-print(r + k)
-
-e = int(input("e: "))
-h = int(input("h: "))
-
-print(e * h)
-
-g = int(input("g: "))
-o = int(input("o: "))
-
-f = g / o
-print(f)
-
-k = int(input("k: "))
+i = int(input("i: "))
 p = int(input("p: "))
 
-d = k / p
-print(f"{d:.40f}")
+print(i + p)
 
-g = int(input("g: "))
-d = int(input("d: "))
+u = int(input("u: "))
+l = int(input("l: "))
 
-print(g - d)
+print(u - l)
 
-g = get_int("what's g? ")
-u = get_int("what's u? ")
+t = int(input("t: "))
+s = int(input("s: "))
 
-if (g < u):
-    print("g is less than u")
+f = t / s 
+print(f)
 
-elif (g > u):
-    print("g is greater than u")
+y = int(input("y: "))
+p = int(input("p: "))
 
-else:
-    print("g and u are equal")        
+g = y / p 
+print(f"{g:.50f}")
 
-def sort_array():
-    print("Array has been sorted")
+r = int(input("r: "))
+h = int(input("h: "))
 
-sort_array()    
+print(r * h)
 
-def sort_array():
+def formate_date():
+    print(f"formatting the current date")
+
+
+formate_date()    
+
+def formate_date():
     while True:
-        print("Array has been sorted")
+        print(f"formatting the current date")
 
+formate_date()        
 
-sort_array()        
-
-def on_button_click():
+def formate_date():
     for i in range(3):
-        print("to this when clicked")
+        print(f"formatting the current date")
 
 
-on_button_click()        
+formate_date()        
 
+def formate_date():
+    formate_date = 0
+    while formate_date < 3:
+        formate_date += 1
+        print(f"formatting the current date")
 
-def on_button_click():
-    on_button_click = 0
-    while on_button_click < 3:
-        on_button_click += 1
-        print("to this when clicked")
+formate_date()        
 
-
-on_button_click()
-
-
-names = ["Jess","Jennifer","Jen"]
-name = get_string("Name: ")
-
+names = ["Jess","Charlie","Ali"]
+name = get_string("Names: ")
 if name in names:
     print("found")
 
@@ -86,25 +75,52 @@ else:
 
 scores = []
 for i in range(3):
-    player = get_int("Score: ")
+    player = get_int("Scores: ")
     scores.append(player)
 
-average = sum(scores) / len(scores)
-print(f"Average: {average}")
-
-def main():
-    for i in range(3):
-        system()
-
-
+average = sum(scores) / len(scores) 
+print(f"Average: {average}")    
 
 def system():
-    print("system is malfunctioning") 
+    for i in range(3):
+        sort_array()
 
 
-main()           
+def sort_array():
+    print(f"array has been sorted")
+
+
+system()
+
 
 def greet(name):
-    print(f"hello {name}")
+    print(f"hello,{name}")
 
-greet("Jennifer")    
+
+
+greet("name")
+
+v = int(input("v: "))
+p = int(input("p: "))
+
+if (v < p):
+    print("v is less than p")
+
+elif (v > p):
+    print("v is greater than p")
+
+else:
+    print("v and p are equal")    
+
+
+s = input("s: ")
+p = input("p: ")
+
+if s == p:
+    print("equal")
+
+elif s != p:
+    print("Not equal") 
+
+else:
+    print("s and p are equal")       
