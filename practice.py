@@ -123,3 +123,14 @@ if d == r:
 
 elif d != r:
     print("different") 
+
+# Question:- make an even odd function 
+
+def odd_or_even(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+    
+num = int(input("Enter a number: "))
+print(f"The number {num} is {odd_or_even(num)}")    
