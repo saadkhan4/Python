@@ -1,72 +1,87 @@
-from cs50 import get_int, get_string
+from cs50 import get_string, get_int
 
 answer = get_string("what's your name? ")
-print(f"hello ,{answer}")
-
-answer = input("what's your name? ")
 print(f"hello , {answer}")
 
-o = get_int("o: ")
-p = get_int("p: ")
+reply = get_string("what's your name? ")
+print(f"hello , {reply}")
 
-print(o + p)
+f = get_int("f: ")
+j = get_int("j: ")
+
+print(f + j)
+
+h = int(input("h: "))
+p = int(input("p: "))
+
+print(h + p)
+
+g = int(input("g: "))
+e = int(input("e: "))
+
+q = g / e
+print(q)
+
+q = int(input("q: "))
+o = int(input("o: "))
+
+b = q / o
+print(f"{b:.43f}")
+
+j = int(input("j: "))
+p = int(input("p: "))
+
+print(j * p)
 
 i = int(input("i: "))
-p = int(input("p: "))
-
-print(i + p)
-
-u = int(input("u: "))
 l = int(input("l: "))
 
-print(u - l)
+print(i - l)
 
-t = int(input("t: "))
-s = int(input("s: "))
+u = int(input("u: "))
+o = int(input("o: "))
 
-f = t / s 
-print(f)
+if (u < o):
+    print("u is greater than o")
 
-y = int(input("y: "))
-p = int(input("p: "))
+elif (u > o):
+    print("u is less than o")
 
-g = y / p 
-print(f"{g:.50f}")
+else:
+    print("u and o are equal")        
 
-r = int(input("r: "))
-h = int(input("h: "))
-
-print(r * h)
-
-def formate_date():
-    print(f"formatting the current date")
+def end_game():
+    print("game has been ended")
 
 
-formate_date()    
+end_game()    
 
-def formate_date():
+def end_game():
     while True:
-        print(f"formatting the current date")
+        print("game has been ended")
 
-formate_date()        
 
-def formate_date():
+end_game()
+
+def system_loop():
     for i in range(3):
-        print(f"formatting the current date")
+        print("loop will begin")
 
 
-formate_date()        
+system_loop()       
 
-def formate_date():
-    formate_date = 0
-    while formate_date < 3:
-        formate_date += 1
-        print(f"formatting the current date")
+def system_loop():
+    system_loop = 0
+    while system_loop < 3:
+        system_loop += 1
+        print("loop will begin")
 
-formate_date()        
 
-names = ["Jess","Charlie","Ali"]
-name = get_string("Names: ")
+system_loop()        
+
+names = ["Jess","Coop","Charlotte"]
+name = input("Name: ")
+
 if name in names:
     print("found")
 
@@ -75,52 +90,36 @@ else:
 
 scores = []
 for i in range(3):
-    player = get_int("Scores: ")
+    player = int(input("Scores: "))
     scores.append(player)
 
 average = sum(scores) / len(scores) 
-print(f"Average: {average}")    
+print(f"Average: {average}")
+
+def main():
+    for i in range(3):
+        system()
+
+
 
 def system():
-    for i in range(3):
-        sort_array()
+    print("System is malfunctioning")
 
 
-def sort_array():
-    print(f"array has been sorted")
-
-
-system()
-
+main()           
 
 def greet(name):
-    print(f"hello,{name}")
+    print(f"hello ,{name}")
 
 
+greet("name")    
 
-greet("name")
+d = input("d: ")
+r = input("r: ")
 
-v = int(input("v: "))
-p = int(input("p: "))
-
-if (v < p):
-    print("v is less than p")
-
-elif (v > p):
-    print("v is greater than p")
-
-else:
-    print("v and p are equal")    
+if d == r:
+    print("same")
 
 
-s = input("s: ")
-p = input("p: ")
-
-if s == p:
-    print("equal")
-
-elif s != p:
-    print("Not equal") 
-
-else:
-    print("s and p are equal")       
+elif d != r:
+    print("different") 
