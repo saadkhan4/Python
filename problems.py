@@ -13,8 +13,15 @@
 
 
 # QUESTION: Write a Python function that takes a string as input and returns the string reversed.
-def reverse_string(input_string):
-    return input_string[::-1]       #[::-1] means “take the entire string but step backwards by 1”.
+# def reverse_string(input_string):
+#     return input_string[::-1]       #[::-1] means “take the entire string but step backwards by 1”.
 
-user_input = input("Enter a string: ")
+# user_input = input("Enter a string: ")
+# print(f"The reverse string is {reverse_string(user_input)}")
+
+
+def reverse_string(input_string):
+    return input_string[::-1]
+
+user_input = input("Enter a string")
 print(f"The reverse string is {reverse_string(user_input)}")

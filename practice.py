@@ -3,128 +3,119 @@ from cs50 import get_string, get_int
 answer = get_string("what's your name? ")
 print(f"hello , {answer}")
 
-reply = get_string("what's your name? ")
+reply = input("what's your name? ")
 print(f"hello , {reply}")
 
-f = get_int("f: ")
-j = get_int("j: ")
+r = get_int("r: ")
+p = get_int("p: ")
 
-print(f + j)
+print(r + p)
 
-h = int(input("h: "))
+u = int(input("u: "))
 p = int(input("p: "))
 
-print(h + p)
-
-g = int(input("g: "))
-e = int(input("e: "))
-
-q = g / e
-print(q)
-
-q = int(input("q: "))
-o = int(input("o: "))
-
-b = q / o
-print(f"{b:.43f}")
-
+print(u + p)
+ 
 j = int(input("j: "))
 p = int(input("p: "))
 
-print(j * p)
+print(j - p)
 
-i = int(input("i: "))
+b = int(input("b: "))
+k = int(input("k: "))
+
+print(b * k)
+
+m = int(input("m: "))
 l = int(input("l: "))
 
-print(i - l)
+o = m / l
+print(o)
+
+s = int(input("s: "))
+n = int(input("n: "))
+
+m = s / n 
+print(f"{m:.40f}")
 
 u = int(input("u: "))
-o = int(input("o: "))
+l = int(input("l: "))
 
-if (u < o):
-    print("u is greater than o")
+if (u < l):
+    print("u is less than l")
 
-elif (u > o):
-    print("u is less than o")
+elif(u > l):
+    print("u is greater than l")
 
 else:
-    print("u and o are equal")        
+    print("u and l are equal")        
 
-def end_game():
-    print("game has been ended")
+x = input("x: ")
+g = input("g: ")
 
+if x == g:
+    print("same")
 
-end_game()    
+else:
+    print("different")
 
-def end_game():
+games = ["Resident Evil","Fortnite","Cyberpunk 2077"]
+game = input("Game: ")
+if game in games:
+    print("Found")
+
+else:
+    print("Not found")    
+
+scores = []
+for i in range(3):
+    player = int(input("Score: "))
+    scores.append(player)
+
+average = sum(scores) / len(scores)
+print(f"Average: {average}")    
+
+def system_loop():
     while True:
-        print("game has been ended")
+     print("loop has been started")
 
 
-end_game()
+system_loop()    
 
 def system_loop():
     for i in range(3):
-        print("loop will begin")
+        print("loop has been started")
 
 
-system_loop()       
+system_loop()        
 
 def system_loop():
     system_loop = 0
     while system_loop < 3:
         system_loop += 1
-        print("loop will begin")
+        print("loop has been started")
 
 
-system_loop()        
-
-names = ["Jess","Coop","Charlotte"]
-name = input("Name: ")
-
-if name in names:
-    print("found")
-
-else:
-    print("not found")    
-
-scores = []
-for i in range(3):
-    player = int(input("Scores: "))
-    scores.append(player)
-
-average = sum(scores) / len(scores) 
-print(f"Average: {average}")
-
-def main():
-    for i in range(3):
-        system()
-
-
+system_loop()
 
 def system():
-    print("System is malfunctioning")
+    for i in range(3):
+        truncation()
 
 
-main()           
+
+def truncation():
+    print("inter has been truncated")
+
+
+system()    
 
 def greet(name):
-    print(f"hello ,{name}")
+    print(f"hello , {name}") 
 
 
-greet("name")    
 
-d = input("d: ")
-r = input("r: ")
-
-if d == r:
-    print("same")
-
-
-elif d != r:
-    print("different") 
-
-# Question:- make an even odd function 
+greet("Natasha")           
 
 def odd_or_even(number):
     if number % 2 == 0:
@@ -134,3 +125,9 @@ def odd_or_even(number):
     
 num = int(input("Enter a number: "))
 print(f"The number {num} is {odd_or_even(num)}")    
+
+def reverse_string(input_string):
+    return input_string[::-1]
+
+user_input = input("Enter a string: ")
+print(f"The reverse string is {reverse_string(user_input)}")
