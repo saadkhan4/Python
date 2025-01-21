@@ -26,3 +26,13 @@ def second_largest(numbers):
 
 num_list = [10, 20, 4, 45, 99, 99] 
 print(f"The second largest number is {second_largest(num_list)}")
+
+
+
+def second_largest(numbers):
+    unique_number = sorted(set(numbers), reverse=True)
+    return unique_number[1]
+
+
+num_list = [10, 20, 4, 45, 69, 69]
+print(f"The second largest number is {second_largest(num_list)}")

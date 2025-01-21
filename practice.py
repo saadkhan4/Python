@@ -3,119 +3,132 @@ from cs50 import get_string, get_int
 answer = get_string("what's your name? ")
 print(f"hello , {answer}")
 
-reply = input("what's your name? ")
-print(f"hello , {reply}")
+answer = input("what's your name? ")
+print(f"hello , {answer}")
 
-r = get_int("r: ")
-p = get_int("p: ")
+c = get_int("c: ")
+o = get_int("o: ")
 
-print(r + p)
-
-u = int(input("u: "))
-p = int(input("p: "))
-
-print(u + p)
- 
-j = int(input("j: "))
-p = int(input("p: "))
-
-print(j - p)
+print (c + o)
 
 b = int(input("b: "))
-k = int(input("k: "))
-
-print(b * k)
-
 m = int(input("m: "))
+
+print(b + m)
+
+n = int(input("n: "))
 l = int(input("l: "))
 
-o = m / l
-print(o)
+print(n - l)
 
-s = int(input("s: "))
-n = int(input("n: "))
+r = int(input("r: "))
+p = int(input("p: "))
 
-m = s / n 
-print(f"{m:.40f}")
+print(r * p)
+
+x = int(input("x: "))
+i = int(input("i: "))
+
+f = x / i
+print(f)
 
 u = int(input("u: "))
-l = int(input("l: "))
+q = int(input("q: "))
 
-if (u < l):
-    print("u is less than l")
+h = u / q
+print(f"{h:.50f}")
 
-elif(u > l):
-    print("u is greater than l")
+n = int(input("n: "))
+o = int(input("o: "))
 
-else:
-    print("u and l are equal")        
+if (n < o):
+    print("n is less than o")
 
-x = input("x: ")
-g = input("g: ")
-
-if x == g:
-    print("same")
+elif (n > o):
+    print("n is greater than o")
 
 else:
-    print("different")
+    print("n and o are equal")
 
-games = ["Resident Evil","Fortnite","Cyberpunk 2077"]
-game = input("Game: ")
-if game in games:
-    print("Found")
+def break_loop():
+    print("loop ends here")
 
-else:
-    print("Not found")    
 
-scores = []
-for i in range(3):
-    player = int(input("Score: "))
-    scores.append(player)
+break_loop()
 
-average = sum(scores) / len(scores)
-print(f"Average: {average}")    
 
-def system_loop():
+def break_loop():
     while True:
-     print("loop has been started")
+        print("loop ends here")
 
 
-system_loop()    
+break_loop()
 
-def system_loop():
+
+def break_loop():
     for i in range(3):
-        print("loop has been started")
+        print("loop ends here")
 
 
-system_loop()        
+break_loop()
+
+
 
 def system_loop():
     system_loop = 0
     while system_loop < 3:
         system_loop += 1
-        print("loop has been started")
+        print("loop ends here")
 
 
-system_loop()
+system_loop()        
+
+
+v = input("v: ")
+p = input("p: ")
+
+if v == p:
+    print("same")
+
+else:
+    print("different")
+
+names = ["Jade", "Julia","Jess"] 
+name = input("Name: ")
+
+if name in names:
+    print("found")
+
+else:
+    print("not found")    
+
+
+scores = []
+for i in range(3):
+    player = int(input("Scores: "))
+    scores.append(player)
+
+average = sum(scores) / len(scores)
+print(f"Average: {average}")
+
 
 def system():
     for i in range(3):
-        truncation()
+        system_loop()
 
 
 
-def truncation():
-    print("inter has been truncated")
+def system_loop():
+    print("loop initiate from here")        
 
 
 system()    
 
 def greet(name):
-    print(f"hello , {name}") 
+    print(f"hello ,{name}")
 
 
-
-greet("Natasha")           
+greet("Natasha")    
 
 def odd_or_even(number):
     if number % 2 == 0:
@@ -129,5 +142,15 @@ print(f"The number {num} is {odd_or_even(num)}")
 def reverse_string(input_string):
     return input_string[::-1]
 
-user_input = input("Enter a string: ")
-print(f"The reverse string is {reverse_string(user_input)}")
+input_string = input("Enter a string: ")
+print(f"The reverse string is {reverse_string(input_string)}")
+
+
+def second_largest(numbers):
+    unique_number = sorted(set(numbers), reverse=True)
+    return unique_number[1]
+
+num_list = [10 , 120 , 555 , 144 , 56, 56]
+print(f"The second largest number is {second_largest(num_list)}")
+
+    
