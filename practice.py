@@ -7,100 +7,100 @@ answer = input("what's your name? ")
 print(f"hello , {answer}")
 
 c = get_int("c: ")
-o = get_int("o: ")
+f = get_int("f: ")
 
-print (c + o)
+print(c + f)
 
-b = int(input("b: "))
-m = int(input("m: "))
-
-print(b + m)
-
-n = int(input("n: "))
-l = int(input("l: "))
-
-print(n - l)
-
-r = int(input("r: "))
+g = int(input("g: "))
 p = int(input("p: "))
 
-print(r * p)
+print(g + p)
 
-x = int(input("x: "))
-i = int(input("i: "))
+b = int(input("b: "))
+h = int(input("h: "))
 
-f = x / i
-print(f)
+print(b - h)
 
-u = int(input("u: "))
-q = int(input("q: "))
+j = int(input("j: "))
+l = int(input("l: "))
 
-h = u / q
-print(f"{h:.50f}")
+print(j * l)
 
-n = int(input("n: "))
+k = int(input("k: "))
 o = int(input("o: "))
 
-if (n < o):
-    print("n is less than o")
+z = k / o
+print(z)
 
-elif (n > o):
-    print("n is greater than o")
+c = int(input("c: "))
+r = int(input("r: "))
+
+v = c / r
+print(f"{v:.56f}")
+
+v = int(input("v: "))
+o = int(input("o: "))
+
+if (v > o):
+    print("v is greater than o")
+
+elif (v < o):
+    print("v is less than o")
 
 else:
-    print("n and o are equal")
+    print("v and o are equal")
 
-def break_loop():
-    print("loop ends here")
+b = input("b: ")
+o = input("o: ")
 
-
-break_loop()
-
-
-def break_loop():
-    while True:
-        print("loop ends here")
-
-
-break_loop()
-
-
-def break_loop():
-    for i in range(3):
-        print("loop ends here")
-
-
-break_loop()
-
-
-
-def system_loop():
-    system_loop = 0
-    while system_loop < 3:
-        system_loop += 1
-        print("loop ends here")
-
-
-system_loop()        
-
-
-v = input("v: ")
-p = input("p: ")
-
-if v == p:
+if b == o:
     print("same")
 
 else:
-    print("different")
+    print("different")    
 
-names = ["Jade", "Julia","Jess"] 
+
+def save_data():
+    print("data is saved")
+
+
+save_data()
+
+def save_data():
+    print("data is saving")
+
+
+save_data()
+
+
+def sys_loop():
+    for i in range(3):
+        print("data is saving")
+
+
+
+sys_loop()
+
+
+def sys_loop():
+    sys_loop = 0
+    while sys_loop < 3:
+        sys_loop += 1
+        print("loop has been started")
+
+
+sys_loop()
+
+
+names = ["Ali","Jess","Hamza"]
 name = input("Name: ")
 
 if name in names:
     print("found")
 
+
 else:
-    print("not found")    
+    print("not found")
 
 
 scores = []
@@ -112,23 +112,25 @@ average = sum(scores) / len(scores)
 print(f"Average: {average}")
 
 
-def system():
-    for i in range(3):
-        system_loop()
-
-
-
-def system_loop():
-    print("loop initiate from here")        
-
-
-system()    
-
 def greet(name):
     print(f"hello ,{name}")
 
-
 greet("Natasha")    
+
+
+def system():
+    for i in range(3):
+        loop()
+
+
+def loop():
+    print("system loop has been initiated")
+
+
+
+system()           
+
+
 
 def odd_or_even(number):
     if number % 2 == 0:
@@ -137,20 +139,19 @@ def odd_or_even(number):
         return "Odd"
     
 num = int(input("Enter a number: "))
-print(f"The number {num} is {odd_or_even(num)}")    
+print(f"The number {num} is {odd_or_even(num)}")
 
 def reverse_string(input_string):
     return input_string[::-1]
 
-input_string = input("Enter a string: ")
-print(f"The reverse string is {reverse_string(input_string)}")
+user_input = input("Enter your string: ")
+print(f"The reverse string is {reverse_string(user_input)}")
 
 
-def second_largest(numbers):
-    unique_number = sorted(set(numbers), reverse=True)
+def unique_number(numbers):
+    unique_number = sorted(set(numbers),reverse=True)
     return unique_number[1]
 
-num_list = [10 , 120 , 555 , 144 , 56, 56]
-print(f"The second largest number is {second_largest(num_list)}")
 
-    
+num_list = [12,54,55,44,60,60,2013] 
+print(f"The second largest number is {unique_number(num_list)}")
