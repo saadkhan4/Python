@@ -1,121 +1,126 @@
-from cs50 import get_string, get_int
+from cs50 import get_string , get_int
 
-answer = get_string("what's your name? ")
+answer = get_string("What's your name? ")
 print(f"hello , {answer}")
 
 answer = input("what's your name? ")
 print(f"hello , {answer}")
 
-c = get_int("c: ")
 f = get_int("f: ")
+t = get_int("t: ")
 
-print(c + f)
+print(f + t)
 
 g = int(input("g: "))
-p = int(input("p: "))
-
-print(g + p)
-
-b = int(input("b: "))
-h = int(input("h: "))
-
-print(b - h)
-
-j = int(input("j: "))
 l = int(input("l: "))
 
-print(j * l)
+print(g + l)
 
-k = int(input("k: "))
-o = int(input("o: "))
+b = int(input("b: "))
+m = int(input("m: "))
 
-z = k / o
-print(z)
-
-c = int(input("c: "))
-r = int(input("r: "))
-
-v = c / r
-print(f"{v:.56f}")
+print(b - m)
 
 v = int(input("v: "))
 o = int(input("o: "))
 
-if (v > o):
-    print("v is greater than o")
+print(v * o)
 
-elif (v < o):
-    print("v is less than o")
+c = int(input("c: "))
+k = int(input("k: "))
+
+l = c / k
+print(l)
+
+s = int(input("s: "))
+a = int(input("a: "))
+
+m = s / a 
+print(f"{m:.40f}")
+
+b = int(input("b: "))
+u = int(input("u: "))
+
+if (b < u):
+    print("b is less than u")
+
+elif (b > u):
+    print("b is greater than u")
 
 else:
-    print("v and o are equal")
+    print("b and u are equal")
 
+
+d = input("d: ")
 b = input("b: ")
-o = input("o: ")
 
-if b == o:
+if d == b:
     print("same")
 
 else:
-    print("different")    
-
-
-def save_data():
-    print("data is saved")
-
-
-save_data()
-
-def save_data():
-    print("data is saving")
-
-
-save_data()
-
-
-def sys_loop():
-    for i in range(3):
-        print("data is saving")
+    print("different") 
 
 
 
-sys_loop()
-
-
-def sys_loop():
-    sys_loop = 0
-    while sys_loop < 3:
-        sys_loop += 1
-        print("loop has been started")
-
-
-sys_loop()
-
-
-names = ["Ali","Jess","Hamza"]
+names = ["Jess", "Nova","star_scream"]
 name = input("Name: ")
 
-if name in names:
+if name in names: 
     print("found")
 
-
 else:
-    print("not found")
-
+    print("not found") 
 
 scores = []
 for i in range(3):
-    player = int(input("Scores: "))
+    player = int(input("Score: "))
     scores.append(player)
 
 average = sum(scores) / len(scores)
-print(f"Average: {average}")
+print(f"Average: {average}")    
+
+
+
+def formate_date():
+    print("date has been formatted")
+
+
+formate_date()
+
+
+def system_loop():
+    while True:
+        print("loop has been started")
+
+system_loop()
+
+
+
+def system_loop():
+    for i in range(3):
+        print("loop has been started")
+
+
+system_loop()
+
+
+def download_file():
+    download_file = 0
+    while download_file < 3:
+        download_file += 1
+        print("file will download soon")
+
+
+download_file()
 
 
 def greet(name):
-    print(f"hello ,{name}")
+    print(f"hello , {name}")
 
-greet("Natasha")    
+
+
+greet("Natasha")
+
 
 
 def system():
@@ -123,12 +128,14 @@ def system():
         loop()
 
 
+
 def loop():
-    print("system loop has been initiated")
+    print("loop has been initiated")
 
 
 
-system()           
+
+system()
 
 
 
@@ -138,20 +145,23 @@ def odd_or_even(number):
     else:
         return "Odd"
     
+
 num = int(input("Enter a number: "))
-print(f"The number {num} is {odd_or_even(num)}")
+print(f"The number {num} is {odd_or_even(num)}")    
+
 
 def reverse_string(input_string):
-    return input_string[::-1]
+    return input_string [::-1]
 
-user_input = input("Enter your string: ")
+user_input = input("Enter a string: ")
 print(f"The reverse string is {reverse_string(user_input)}")
 
 
+
 def unique_number(numbers):
-    unique_number = sorted(set(numbers),reverse=True)
+    unique_number = sorted(set(numbers), reverse=True)
     return unique_number[1]
 
 
-num_list = [12,54,55,44,60,60,2013] 
+num_list = [12,44,23,332,33,23,12]
 print(f"The second largest number is {unique_number(num_list)}")
