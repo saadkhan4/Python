@@ -62,7 +62,7 @@ else:
 
 
 
-names = ["Jess", "Nova","star_scream"]
+names = ["Ali", "Sam","Hamza"]
 name = input("Name: ")
 
 if name in names: 
@@ -106,7 +106,7 @@ system_loop()
 
 def download_file():
     download_file = 0
-    while download_file < 3:
+    while download_file < 4:
         download_file += 1
         print("file will download soon")
 
