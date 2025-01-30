@@ -1,162 +1,164 @@
 from cs50 import get_string , get_int
 
-# answer = get_string("What's your name? ")
-# print(f"hello , {answer}")
+answer = get_string("what's your name? ")
+print(f"hello, {answer}")
 
-# answer = input("what's your name? ")
-# print(f"hello , {answer}")
+answer = input("what's your name? ")
+print(f"hello ,{answer}")
 
-# f = get_int("f: ")
-# t = get_int("t: ")
+r = get_int("r: ")
+o = get_int("o: ")
 
-# print(f + t)
+print (r + o)
 
-# g = int(input("g: "))
-# l = int(input("l: "))
+b = int(input("b: "))
+q = int(input("q: "))
 
-# print(g + l)
+print(b - q)
 
-# b = int(input("b: "))
-# m = int(input("m: "))
+v = int(input("v: "))
+t = int(input("t: "))
 
-# print(b - m)
+print(v * t)
 
-# v = int(input("v: "))
-# o = int(input("o: "))
+h = int(input("h: "))
+m = int(input("m: "))
 
-# print(v * o)
+c = h / m
+print(c)
 
-# c = int(input("c: "))
-# k = int(input("k: "))
+p = int(input("p: "))
+z = int(input("z: "))
 
-# l = c / k
-# print(l)
+c = p / z
+print("{c:.40f}")
 
-# s = int(input("s: "))
-# a = int(input("a: "))
+b = int(input("b: "))
+n = int(input("n: "))
 
-# m = s / a 
-# print(f"{m:.40f}")
+if (b < n):
+    print("b is less than n")
 
-# b = int(input("b: "))
-# u = int(input("u: "))
+elif (b > n):
+    print("b is greater than n")
 
-# if (b < u):
-#     print("b is less than u")
-
-# elif (b > u):
-#     print("b is greater than u")
-
-# else:
-#     print("b and u are equal")
+else:
+    print("b and n are equal") 
 
 
-# d = input("d: ")
-# b = input("b: ")
+v = input("v: ")
+l = input("l: ")
 
-# if d == b:
-#     print("same")
+if v == t:
+    print("same")
 
-# else:
-#     print("different") 
-
-
-
-# names = ["Ali", "Sam","Hamza"]
-# name = input("Name: ")
-
-# if name in names: 
-#     print("found")
-
-# else:
-#     print("not found") 
-
-# scores = []
-# for i in range(3):
-#     player = int(input("Score: "))
-#     scores.append(player)
-
-# average = sum(scores) / len(scores)
-# print(f"Average: {average}")    
+else:
+    print("different")
 
 
+names = ["Ali","Jesse","Rose"]
+name = input("Name: ")
 
-# def formate_date():
-#     print("date has been formatted")
+if name in names:
+    print("found")
 
-
-# formate_date()
-
-
-# def system_loop():
-#     while True:
-#         print("loop has been started")
-
-# system_loop()
+else:
+    print("not found")
 
 
+scores = []
+for i in range(3):
+    player = int(input("Score: "))
+    scores.append(player)
 
-# def system_loop():
-#     for i in range(3):
-#         print("loop has been started")
-
-
-# system_loop()
-
-
-# def download_file():
-#     download_file = 0
-#     while download_file < 4:
-#         download_file += 1
-#         print("file will download soon")
+average = sum(scores) / len(scores)
+print(f"Average: {average}")    
 
 
-# download_file()
+def system():
+    print("format system")
 
 
-# def greet(name):
-#     print(f"hello , {name}")
+system()
 
 
+def system():
+    while True:
+        print("format system")
 
-# greet("Natasha")
+
+system()
+
+
+def formate_date():
+    for i in range(3):
+        print("date has been formatted")
+
+
+formate_date()
+
+
+def system():
+    system = 0
+    while system < 3:
+        system += 1
+        print("system is corrupted")
+
+
+system()    
+
+
+def sys_loop():
+    for i in range(3):
+        system()
+
+
+def system():
+    print("access to system")
+
+
+sys_loop()
 
 
 
-# def system():
-#     for i in range(3):
-#         loop()
+def greet(name):
+    print(f"hello {name}")
 
 
-
-# def loop():
-#     print("loop has been initiated")
+greet("Natasha")
 
 
-
-
-# system()
-
-
-
-def odd_or_even(number):
+def even_or_odd(number):
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
     
-num = int(input("Enter a number: "))
-print(f"The number {num} is {odd_or_even(num)}")    
+num = int(input("Enter your number: "))
+print(f"The number {num} is {even_or_odd(num)}")   
+
 
 def reverse_string(input_string):
-    return input_string[::-1]
+    return input_string [::-1]
 
-input_user = input("Enter your string: ")
-print(f"The reverse string is {reverse_string(input_user)}")
+user_input = input("Enter your string: ")
+print(f"The reverse string is {reverse_string(user_input)}")
 
-def second_largest(numbers):
-    unique_number = sorted(set(numbers), reverse=True)
+def unique_number(numbers):
+    unique_number = sorted(set(numbers),reverse=True)
     return unique_number[1]
 
-num_list = [12,32,33,33,121,32,444,90]
-print(f"Second largest number is {second_largest(num_list)}")
+num_list = [32,43,12,22,44,1233]
+print(f"The second largest number is {unique_number(num_list)}")
+
+
+
+
+
+
+
+
+
+
+
+
