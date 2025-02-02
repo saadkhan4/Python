@@ -1,62 +1,61 @@
 from cs50 import get_string , get_int
 
-answer = get_string("what's your name? ")
-print(f"hello, {answer}")
+answer = get_string("what's your age? ")
+print(f"I'm {answer} years old")
 
 answer = input("what's your name? ")
 print(f"hello ,{answer}")
 
-r = get_int("r: ")
-o = get_int("o: ")
+b = get_int("b: ")
+k = get_int("k: ")
 
-print (r + o)
+print(b + k)
 
-b = int(input("b: "))
-q = int(input("q: "))
-
-print(b - q)
-
-v = int(input("v: "))
-t = int(input("t: "))
-
-print(v * t)
-
-h = int(input("h: "))
+c = int(input("c: "))
 m = int(input("m: "))
 
-c = h / m
-print(c)
+print(c - m)
 
-p = int(input("p: "))
-z = int(input("z: "))
+x = int(input("x: "))
+l = int(input("l: "))
 
-c = p / z
-print("{c:.40f}")
+print(x * l)
 
+t = int(input("t: "))
+m = int(input("m: "))
+
+x = t / m
+print(x)
+
+m = int(input("m: "))
 b = int(input("b: "))
-n = int(input("n: "))
 
-if (b < n):
-    print("b is less than n")
+v = m / b
+print(f"{v:.32f}")
 
-elif (b > n):
-    print("b is greater than n")
+f = int(input("f: "))
+k = int(input("k: "))
+
+if (f < k):
+    print("f is less than k")
+
+elif (f > k):
+    print("f is greater than k")
 
 else:
-    print("b and n are equal") 
+    print("f and k are equal") 
 
-
-v = input("v: ")
+b = input("b: ")
 l = input("l: ")
 
-if v == t:
+if (b == l):
     print("same")
 
-else:
+else: 
     print("different")
 
 
-names = ["Ali","Jesse","Rose"]
+names = ["Ali","Jess","Charlotte"]
 name = input("Name: ")
 
 if name in names:
@@ -66,90 +65,93 @@ else:
     print("not found")
 
 
+def update_score():
+    print("score updated")
+
+
+
+update_score()
+
+def update_score():
+    while True:
+        print("score updated")
+
+
+update_score()
+
+
+def update_score():
+    for i in range(3):
+        print("score updated")
+
+
+
+update_score()
+
+
+def update_score():
+    update_score = 0
+    while update_score < 3:
+        update_score += 1
+        print("score has been updated")
+
+
+update_score()
+
 scores = []
 for i in range(3):
     player = int(input("Score: "))
     scores.append(player)
 
 average = sum(scores) / len(scores)
-print(f"Average: {average}")    
-
-
-def system():
-    print("format system")
-
-
-system()
-
+print(f"Average: {average}")
 
 def system():
-    while True:
-        print("format system")
-
-
-system()
-
-
-def formate_date():
     for i in range(3):
-        print("date has been formatted")
-
-
-formate_date()
-
-
-def system():
-    system = 0
-    while system < 3:
-        system += 1
-        print("system is corrupted")
-
-
-system()    
+        sys_loop()
 
 
 def sys_loop():
-    for i in range(3):
-        system()
+    print("system loop starts from here")
 
-
-def system():
-    print("access to system")
-
-
-sys_loop()
-
-
+system()
 
 def greet(name):
-    print(f"hello {name}")
+    print(f"hello, {name}")
 
 
 greet("Natasha")
 
-
-def even_or_odd(number):
+def odd_or_even(number):
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
     
-num = int(input("Enter your number: "))
-print(f"The number {num} is {even_or_odd(num)}")   
-
+num = int(input("Enter your number? "))
+print(f"The number {num} is {odd_or_even(num)}")    
+    
 
 def reverse_string(input_string):
-    return input_string [::-1]
+    return input_string[::-1]
 
 user_input = input("Enter your string: ")
 print(f"The reverse string is {reverse_string(user_input)}")
 
-def unique_number(numbers):
-    unique_number = sorted(set(numbers),reverse=True)
-    return unique_number[1]
+def second_largest(numbers):
+    unique_numbers = sorted(set(numbers),reverse=True)
+    return unique_numbers[1]
 
-num_list = [32,43,12,22,44,1233]
-print(f"The second largest number is {unique_number(num_list)}")
+
+num_list = [23,13,33,234,2321]
+print(f"Second largest number is {second_largest(num_list)}")
+
+
+
+
+
+
+
 
 
 
