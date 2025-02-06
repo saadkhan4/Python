@@ -54,14 +54,14 @@ if (b == l):
 else: 
     print("different")
 
-names = ["Ali","Jess","Cassandra"]
-name = input("Name: ")
+names = ["Megan","Joss","Zack"]
 
+name = input("Name: ")
 if name in names:
     print("found")
 
 else:
-    print("not found")    
+    print("not found")
 
 scores = []
 for i in range(3):
@@ -71,61 +71,66 @@ for i in range(3):
 average = sum(scores) / len(scores)
 print(f"Average: {average}")
 
-def sys_loop():
-    print("system loop start from here")
+
+def scorecard():
+    print("scorecard has been updated")
 
 
+scorecard()
 
-sys_loop()
 
-
-def sys_loop():
+def system():
     while True:
-        print("system loop starts from here")
+        print("system malfunctioning")
+
+
+system()
+
+
+def sys_loop():
+    for i in range(3):
+        print("loop started from here")
+
 
 
 sys_loop()
 
 
-def formate_date():
-    for i in range(3):
-        print("date has been formatted")
-
-
-formate_date()
-
-
-
-def update_score():
-    update_score = 0 
-    while update_score < 3:
-        update_score += 1
-        print("score has been updated")
+def scorecard():
+    scorecard = 0
+    while scorecard < 3:
+        scorecard += 1
+        print("scorecard is updated")
 
 
 
-update_score()
+scorecard()
+
+
 
 def greet(name):
-    print(f"hello, {name}")
+    print(f"hello , {name}")
 
 
-greet("Natasha")    
+
+greet("Natasha") 
 
 
 def sys_loop():
     for i in range(3):
-        update_score()
+        system()
 
 
 
+def system():
+    print("system malfunctioning")        
 
-def update_score():
-    print("score has been updated")            
 
 
 
 sys_loop()
+
+
 
 def odd_or_even(number):
     if number % 2 == 0:
@@ -135,27 +140,24 @@ def odd_or_even(number):
     
 
 num = int(input("Enter your number: "))
-print(f"The number {num} is {odd_or_even(num)}")    
+print(f"The number {num} is {odd_or_even(num)}")
 
 
 def reverse_string(input_string):
-    return input_string[::-1]
+    return input_string [::-1]
 
 
 user_input = input("Enter your string: ")
 print(f"The reverse string is {reverse_string(user_input)}")
+
 
 def second_largest(numbers):
     unique_numbers = sorted(set(numbers),reverse=True)
     return unique_numbers[1]
 
 
-num_list = [2,43,54,13,443,12]
-print(f"The second largest number is {second_largest(num_list)}")
-
-    
-
-
+num_list = [23,42,1,312,12,1]
+print(f"The second second largest number is {second_largest(num_list)}")
 
 
 
