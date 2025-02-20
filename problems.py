@@ -20,19 +20,32 @@
 # print(f"The reverse string is {reverse_string(user_input)}")
 
 #QUESTION: Write a Python function to find the second largest number in a list. Assume the list contains at least two unique numbers.
-def second_largest(numbers):
-    unique_number = sorted(set(numbers), reverse=True)   #	set(numbers) converts the list to a set, which removes duplicate values. ###sorted(..., reverse=True) sorts the unique numbers in descending order (largest to smallest).
-    return unique_number[1]                              #  unique_numbers[1] retrieves the second element from the sorted list.
+# def second_largest(numbers):
+#     unique_number = sorted(set(numbers), reverse=True)   #	set(numbers) converts the list to a set, which removes duplicate values. ###sorted(..., reverse=True) sorts the unique numbers in descending order (largest to smallest).
+#     return unique_number[1]                              #  unique_numbers[1] retrieves the second element from the sorted list.
 
-num_list = [10, 20, 4, 45, 99, 99] 
-print(f"The second largest number is {second_largest(num_list)}")
+# num_list = [10, 20, 4, 45, 99, 99] 
+# print(f"The second largest number is {second_largest(num_list)}")
+
+#QUESTION:-Data Structures:
+# You are given a list of integers where some numbers appear more than once. Write a Python function to return a list of duplicates.
+def find_duplicate(numbers):
+    duplicates = []       #Stores duplicate numbers.
+    seen = set()          #Tracks numbers that have already appeared.
+
+    for num in numbers:
+        if num in seen and num not in duplicates:    #num not in duplicates → Ensures we don’t add the same duplicate multiple times.
+            duplicates.append(num)
+        seen.add(num)     #stores numbers that have appeared.
+
+    return duplicates
+
+num_list = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 3]
+print(f"Duplicate numbers: {find_duplicate(num_list)}")
+            
 
 
 
-def second_largest(numbers):
-    unique_number = sorted(set(numbers), reverse=True)
-    return unique_number[1]
 
+    
 
-num_list = [10, 20, 4, 45, 69, 69]
-print(f"The second largest number is {second_largest(num_list)}")
