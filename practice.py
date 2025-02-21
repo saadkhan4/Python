@@ -40,33 +40,32 @@ from cs50 import get_string , get_int
 # g = d / l
 # print(f"{g:.43f}")
 
-# x = int(input("x: "))
-# s = int(input("s: "))
+# k = int(input("k: "))
+# o = int(input("o: "))
 
-# if (x < s):
-#     print("x is less than s")
+# if (k < o):
+#     print("k is less than o")
 
-# elif(x > s):
-#     print("x is greater than s")
+# elif (k > o):
+#     print("k is greater than o")
 
 # else:
-#     print("x and s are equal")
+#     print("k and o are equal")
 
+            
+# s = input("s: ")
+# p = input("p: ")
 
-# f = input("f: ")
-# d = input("d: ")
-
-
-# if (f == d):
+# if s == p:
 #     print("same")
 
+# else: 
+#     print("different") 
 
-# else:
-#     print("different")
 
 
-# names = ["Ali","Jess","Cassandra"]
-# name = input("Name: ")
+# names = ["Ali","Megan","Cassandra"]
+# name = input("name: ")
 
 # if name in names:
 #     print("found")
@@ -77,77 +76,76 @@ from cs50 import get_string , get_int
 
 # scores = []
 # for i in range(3):
-#     player = int(input("Score: "))
+#     player = int(input("score: "))
 #     scores.append(player)
 
 # average = sum(scores) / len(scores)
-# print(f"Average: {average}")
+# print(f"Average: {average}")   
 
-
+   
+   
 # def system():
-#     print("system is running")
+#     print("system is malfunctioning")
 
 
 # system()
 
 
-
-# def sys_loop():
-#     for i in range(3):
-#         print("system loop started from here")
-
-
-# sys_loop()
-
-
-# def sys_loop():
-#     while True:
-#         print("loop begins from here")
-
-
-# sys_loop()
-
-
 # def sort_array():
-#     sort_array = 0
-#     while sort_array < 3:
-#         sort_array += 1
-#         print("array has been solved")
+#     for i in range(4):
+#         print("array has been started")
 
 
 # sort_array()
 
 
+# def delete_file():
+#     while True:
+#         print("file has been deleted")
+
+
+# delete_file()
+
+
+
+# def sys_loop():
+#     sys_loop = 0
+#     while sys_loop < 3:
+#         sys_loop += 1
+#         print("loop start from here")
+
+
+# sys_loop()        
+
+
 # def greet(name):
-#     print(f"hello,{name}")
+#     print(f"hello , {name}")
 
 
 # greet("Natasha")
 
 # def main():
 #     for i in range(3):
-#         system_loop()
+#         sys_loop()
 
 
 
-# def system_loop():
-#     print("loop started from here")
+# def sys_loop():
+#     print("loop has been initialized") 
 
 
 
-# main()
-
+# main()          
 
 # def odd_or_even(number):
 #     if number % 2 == 0:
-#         return "Even"
-#     else:
 #         return "Odd"
+#     else:
+#         return "Even"
     
 
 # num = int(input("Enter your number: "))
 # print(f"The number {num} is {odd_or_even(num)}")
-
 
 # def reverse_string(input_string):
 #     return input_string [::-1]
@@ -155,14 +153,13 @@ from cs50 import get_string , get_int
 # user_input = input("Enter your string: ")
 # print(f"The reverse string is {reverse_string(user_input)}")
 
+def second_largest(numbers):
+    unique_numbers = sorted(set(numbers),reverse=True)
+    return unique_numbers[1]
 
-# def second_largest(numbers):
-#     unique_number = sorted(set(numbers),reverse=True)
-#     return unique_number[1]
 
-
-# num_list = [32,42,2,4,5412,343,12]
-# print(f"The second largest number is {second_largest(num_list)}")
+num_list = [2,13,3,42,42,7,5,76]
+print(f"The second largest number is {second_largest(num_list)}")
 
 
 def find_duplicates(numbers):
@@ -176,10 +173,17 @@ def find_duplicates(numbers):
 
     return duplicates
 
-num_list = [2,3,3,1,3,5,6,2,1,7]
-print(f"Duplicate numbers: {find_duplicates(num_list)}")
+num_list = [4,23,44,3,12,64,1,3,5,7,9]
+print(f"Duplicate numbers: {find_duplicates(num_list)}")    
+            
 
-     
+
+
+
+
+
+
+
 
 
 
