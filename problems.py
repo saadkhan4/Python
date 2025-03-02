@@ -29,22 +29,43 @@
 
 #QUESTION:-Data Structures:
 # You are given a list of integers where some numbers appear more than once. Write a Python function to return a list of duplicates.
-def find_duplicate(numbers):
-    duplicates = []       #Stores duplicate numbers.
-    seen = set()          #Tracks numbers that have already appeared.
+# def find_duplicate(numbers):
+#     duplicates = []       #Stores duplicate numbers.
+#     seen = set()          #Tracks numbers that have already appeared.
 
-    for num in numbers:
-        if num in seen and num not in duplicates:    #num not in duplicates → Ensures we don’t add the same duplicate multiple times.
-            duplicates.append(num)
-        seen.add(num)     #stores numbers that have appeared.
+#     for num in numbers:
+#         if num in seen and num not in duplicates:    #num not in duplicates → Ensures we don’t add the same duplicate multiple times.
+#             duplicates.append(num)
+#         seen.add(num)     #stores numbers that have appeared.
 
-    return duplicates
+#     return duplicates
 
-num_list = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 3]
-print(f"Duplicate numbers: {find_duplicate(num_list)}")
-            
+# num_list = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 3]
+# print(f"Duplicate numbers: {find_duplicate(num_list)}")
+#QUESTION:-
+# Logical Problem:
+# Write a Python function to check if two strings are anagrams of each other. Ignore spaces and capitalization.             
+def are_anagrams(str1, str2):
+    # Remove spaces and convert to lowercase
+    str1 = str1.replace(" ", "").lower()
+    str2 = str2.replace(" ", "").lower()
+    
+    # Check if sorted characters are the same
+    return sorted(str1) == sorted(str2)
+
+# Example usage
+print(are_anagrams("Listen", "Silent"))  # Output: True
+print(are_anagrams("Hello", "World"))    # Output: False
 
 
+# def are_anagrams(str1, str2):
+#     str1 = str1.replace(" ", "").lower
+#     str2 = str2.replace(" ", "").lower
+
+#     return sorted(str1) == sorted(str2)
+
+# print(are_anagrams("Listen", "Silent"))
+# print(are_anagrams("Hello", "World"))
 
 
 

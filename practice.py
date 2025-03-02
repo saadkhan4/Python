@@ -139,13 +139,13 @@ from cs50 import get_string , get_int
 
 # def odd_or_even(number):
 #     if number % 2 == 0:
-#         return "Odd"
-#     else:
 #         return "Even"
+#     else:
+#         return "Odd"
     
 
 # num = int(input("Enter your number: "))
-# print(f"The number {num} is {odd_or_even(num)}")
+# print(f"The num {num} is {odd_or_even(num)}")
 
 # def reverse_string(input_string):
 #     return input_string [::-1]
@@ -153,29 +153,39 @@ from cs50 import get_string , get_int
 # user_input = input("Enter your string: ")
 # print(f"The reverse string is {reverse_string(user_input)}")
 
-def second_largest(numbers):
-    unique_numbers = sorted(set(numbers),reverse=True)
-    return unique_numbers[1]
+
+# def second_largest(numbers):
+#     unique_number = sorted(set(numbers),reverse=True)
+#     return unique_number[1]
 
 
-num_list = [2,13,3,42,42,7,5,76]
-print(f"The second largest number is {second_largest(num_list)}")
+# num_list = [34,34,56,76,88,98,12,54]
+# print(f"The second largest number is {second_largest(num_list)}")
+
+# def find_duplicates(numbers):
+#     duplicates = []
+#     seen = set()
+
+#     for num in numbers:
+#         if num in seen and num not in duplicates:
+#             duplicates.append(num)
+#         seen.add(num)
+
+#     return duplicates
+
+# num_list = [1,4,2,5,6,7,8,9,3,4,5,1,7,2,9,4]
+# print(f"Duplicate numbers: {find_duplicates(num_list)}")
 
 
-def find_duplicates(numbers):
-    duplicates = []
-    seen = set()
 
-    for num in numbers:
-        if num in seen and num not in duplicates:
-            duplicates.append(num)
-        seen.add(num)
+def are_anagrams(str1, str2):
+    str1 = str1.replace(" ", "").lower()
+    str2 = str2.replace(" ", "").lower()
 
-    return duplicates
+    return sorted(str1) == sorted(str2)
 
-num_list = [4,23,44,3,12,64,1,3,5,7,9]
-print(f"Duplicate numbers: {find_duplicates(num_list)}")    
-            
+print(are_anagrams("Listen", "Silent"))
+print(are_anagrams("Hello", "World"))
 
 
 
