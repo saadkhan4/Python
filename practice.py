@@ -113,15 +113,14 @@ def machine():
 
 get_sys_info()
 
-def odd_or_even(number):
+def even_or_odd(number):
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
     
 num = int(input("Enter your number: "))
-print(f"The num {num} is {odd_or_even(num)}")
-
+print(f"The number {num} is {even_or_odd(num)}")    
 
 def reverse_string(input_string):
     return input_string[::-1]
@@ -129,13 +128,13 @@ def reverse_string(input_string):
 user_input = input("Enter your string: ")
 print(f"The reverse string is {reverse_string(user_input)}")
 
-
 def second_largest(numbers):
     unique_number = sorted(set(numbers),reverse=True)
     return unique_number[1]
 
-num_list = [23,44,123,33,43,123,43,56,77]
+num_list = [1,4,6,5,23,7,3,98,56,1,3,7,3]
 print(f"The second largest number is {second_largest(num_list)}")
+
 
 def find_duplicates(numbers):
     duplicates = []
@@ -146,16 +145,23 @@ def find_duplicates(numbers):
             duplicates.append(num)
         seen.add(num)
 
+
     return duplicates
 
-num_list = [1,4,5,12,4,465,8,23,2,3,4,6,8,9,3,5,1,56]
-print(f"Duplicate numbers: {find_duplicates(num_list)}")        
+num_list =  [1,4,6,5,23,7,3,98,56,1,3,7,3]
+print(f"The duplicate numbers are {find_duplicates(num_list)}")
 
-def are_anagrams(str1, str2):
+def are_anagrams(str1,str2):
     str1 = str1.replace(" ", "").lower()
-    str2 = str2.replace(" ","").lower()
+    str2 = str2.replace(" ", "").lower()
+
 
     return sorted(str1) == sorted(str2)
 
-print(are_anagrams("Listen" , "Silent"))
-print(are_anagrams("Greet", "Hello"))
+print(are_anagrams("Listen", "Silent"))
+print(are_anagrams("Hello", "World"))
+
+
+
+
+
