@@ -56,6 +56,35 @@ def are_anagrams(str1, str2):
 # Example usage
 print(are_anagrams("Listen", "Silent"))  # Output: True
 print(are_anagrams("Hello", "World"))    # Output: False
+# QUESTION:-
+# String Manipulation:
+# Write a function that counts the number of vowels in a given string.
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0                 # We’re setting up a counter that starts at zero.
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+print(count_vowels("Education is power"))
+
+# QUESTION:
+# Dictionary Use:
+# Given a list of words, write a function that returns a dictionary
+#  where the keys are the words and the values are their lengths.
+def word_lengths(word_list):
+    word_dict = {}
+    for word in word_list:
+        word_dict[word] = len(word)    # "Word" becomes the key in the dictionary.
+    return word_dict
+
+# Example usage
+words = ["apple", "banana", "kiwi"]
+print(word_lengths(words))
+
+
+
 
 
 
