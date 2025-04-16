@@ -163,7 +163,7 @@ def count_vowels(text):
             count += 1
     return count
 
-print(count_vowels("Make name for yourself."))
+print(count_vowels("Surely that thing is masterpiece"))
 
 def word_lengths(word_list):
     word_dict = {}
@@ -171,9 +171,8 @@ def word_lengths(word_list):
         word_dict[word] = len(word)
     return word_dict
 
-words = ["Russia", "Monte Carlo", "England"]
-print(word_lengths(words))    
-
+words = ["England", "Brazil","South Korea"]   
+print(word_lengths(words)) 
 
 
 
