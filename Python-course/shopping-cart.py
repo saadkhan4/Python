@@ -1,9 +1,42 @@
 # SHOPPING CART PROGRAM
 
-item = input("What item would you like to buy?: ")
-price = float(input("What's the price?: "))
-quantity = int(input("How much do you want?: "))
-total = price * quantity
+# item = input("What item would you like to buy?: ")
+# price = float(input("What's the price?: "))
+# quantity = int(input("How much do you want?: "))
+# total = price * quantity
 
-print(f"You have bought {quantity} x {item}/s")
-print(f"Your total is: ${total}")
+# print(f"You have bought {quantity} x {item}/s")
+# print(f"Your total is: ${total}")
+
+
+# SHOPPING CART PROGRAM 2.0
+
+foods = []
+prices = []
+total = 0
+
+while True:
+    food = input("Enter a food to buy (q to quit): ")
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input(f"Enter the price of {food}: $"))
+        foods.append(food)
+        prices.append(price)
+
+print("----- YOUR CART -----")
+
+for food in foods:
+    print(food, end=" ")
+
+for price in prices:
+    total += price
+
+print()                                                 # It will print the blank line.
+print(f"Your total is: ${total}")     
+
+
+
+
+
+
