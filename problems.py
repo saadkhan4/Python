@@ -1,4 +1,4 @@
-# # QUESTION: Write a Python function to check if a given number is odd or even.
+# QUESTION: Write a Python function to check if a given number is odd or even.
 def odd_or_even(number):
     if number % 2 == 0:             #This checks if the number is divisible by 2 without a remainder.
         return "Even"
