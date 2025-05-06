@@ -83,6 +83,12 @@ def word_lengths(word_list):
 words = ["apple", "banana", "kiwi"]
 print(word_lengths(words))
 
+#QUESTION:
+# List Comprehension:
+# Write a one-liner list comprehension to generate a list of squares for all even numbers between 1 and 20.
+
+square = [x**2 for x in range(1,21) if x % 2 == 0]
+print(square)
 
 
 

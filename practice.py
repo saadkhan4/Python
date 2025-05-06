@@ -176,5 +176,40 @@ print(word_length(words))
 
 
 
+square = [x**2 for x in range(1,21) if x % 2 == 0]
+
+print(square)
+
+def find_duplicates(numbers):
+    duplicates = []
+    seen = set()
+
+    for num in numbers:
+        if num in seen and num not in duplicates:
+            duplicates.append(num)
+        seen.add(num)
+    return duplicates 
+
+num_list = [3,43,1,343,2,13,4,2,3,43,1]
+print(f"Duplicates numbers: {find_duplicates(num_list)}")
 
 
+
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+print(count_vowels("hello"))       
+
+def word_length(word_list):
+    word_dict = {}
+    for word in word_list:
+        word_dict[word] = len(word)
+    return word_dict
+
+words = ["Charlotte", "Boi","Marie"] 
+print(word_length(words))    
