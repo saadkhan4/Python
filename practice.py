@@ -1,67 +1,74 @@
 from cs50 import get_string , get_int
 
+reply = input("What's your company? ")
+print(f"It's {reply}")
+
 answer = get_string("what's your name? ")
-print(f"hello ,{answer}")
+print(f"hello {answer}")
 
-answer = input("what's your name? ")
-print(f"hello ,{answer}")
+p = int(input("p: "))
+b = int(input("b: "))
 
-c = get_int("c: ")
-p = get_int("p: ")
+print(p + b)
 
-print(c + p)
-
-v = int(input("v: "))
+f = int(input("f: "))
 k = int(input("k: "))
 
-print(v - k)
+print(f - k)
 
-t = int(input("t: "))
+
+v = int(input("v: "))
 o = int(input("o: "))
 
-b = t / o
-print(b)
+print(v * o)
+
+c = int(input("c: "))
+d = int(input("d: "))
+
+z = c / d
+print(z)
 
 q = int(input("q: "))
-i = int(input("i: "))
-
-print(q * i)
-
-y = int(input("y: "))
-p = int(input("p: "))
-
-g = y / p
-print(f"{g:.43f}")
-
-x = int(input("x: "))
 l = int(input("l: "))
 
-if (x < l):
-    print("x is less than l")
+r = q / l 
+print(f"{r:.40f}")
 
-elif(x > l):
-    print("x is greater than l")
+x = int(input("x: "))
+m = int(input("m: "))
 
+if (x < m):
+    print("x is less than m")
+elif (x > m):
+    print("x is greater than m")
 else:
-    print("x and l are equal") 
+    print("x and m are equal")    
+    
+s = input("s: ")
+h = input("h: ")
 
-o = input("o: ")
-k = input("k: ")
-
-if (o == k):
+if (s == h):
     print("same")
-
 else:
-    print("different")    
+    print("different")
 
-names = ["Megan", "Ali", "Sara"]
+
+temp = int(input("What's the temperature? "))
+
+if (temp >= 35):
+    print("It's very hot today.")
+elif (temp >= 20):
+    print("It's moderate today.")
+else:
+    print("It's cold today.")       
+
+names = ["Charlotte", "John", "Anna"]
 name = input("Name: ")
 
 if name in names:
-    print("Found")
-
+    print("found")
 else:
-    print("Not found") 
+    print("not found")    
 
 scores = []
 for i in range(3):
@@ -71,114 +78,65 @@ for i in range(3):
 average = sum(scores) / len(scores)
 print(f"Average: {average}")    
 
+
 def sys_loop():
     while True:
-       print("loop has been started")
+        print("it keeps going....")
 
 sys_loop()
 
-def machine():
+def for_loop():
     for i in range(3):
-        print("machine is malfunctioning")
+        print("This is for loop.")
 
-machine()
+for_loop()        
 
 def sys_loop():
     sys_loop = 0
     while sys_loop < 3:
-        sys_loop += 1 
-        print("system loop started from here")
+        sys_loop += 1
+        print("This is while loop.")
 
 
-sys_loop()         
+sys_loop()        
 
 def greet(name):
-    print(f"hello, {name}")
+    print(f"Hello ,{name}")
 
 greet("Natasha")
 
-def sys_info():
+def system():
     for i in range(3):
-        machine()
+        sys_loop()
 
 
-def machine():
-    print("info is confidential")        
+def sys_loop():
+    print("This is nested function.") 
 
-sys_info()
+
+system()
 
 def odd_or_even(number):
     if number % 2 == 0:
-        return "Even"
-    else:
         return "Odd"
-
+    else:
+        return "Even"
+    
 num = int(input("Enter your number: "))
 print(f"The number {num} is {odd_or_even(num)}")    
 
-
 def reverse_string(input_string):
-    return input_string[::-1]
+    return input_string [::-1]
 
 user_input = input("Enter your string: ")
 print(f"The reverse string is {reverse_string(user_input)}")
 
-def second_largest(number):
-    unique_number = sorted(set(number),reverse=True)
-    return unique_number[1]
+def second_largest(numbers):
+    unique_number = sorted(set(numbers),reverse=True)
+    return unique_number [1]
 
-num_list = [23,43,34,87,12,90,22]
-print(f"The second largest number is {second_largest(num_list)}")
-
-def find_Duplicates(numbers):
-    duplicates = []
-    seen = set()
-
-    for num in numbers:
-        if num in seen and num not in duplicates:
-            duplicates.append(num)
-        seen.add(num)
-
-    return duplicates
-
-num_list = [1,4,5,1,7,4]
-print(f"Duplicate numbers: {find_Duplicates(num_list)}")        
-
-def are_anagrams(str1,str2):
-    str1 = str1.replace(" ", "").lower()
-    str2 = str2.replace(" ", "").lower()
-
-    return sorted(str1) == sorted(str2)
-
-print(are_anagrams("Silent", "Listen"))
-print(are_anagrams("Hello", "World"))
-
-def count_vowels(text):
-    vowels = "aeiouAEIOU"
-    count = 0
-    for char in text:
-        if char in vowels:
-            count += 1
-    return count
-
-print(count_vowels("Education is power"))        
-
-def word_length(word_list):
-    word_dict = {}
-    for word in word_list:
-        word_dict[word] = len(word)
-    return word_dict
-
-words = ["Khan", "Charlotte", "Bob"]
-print(word_length(words))  
-
-
-
-
-
-square = [x**2 for x in range(1,21) if x % 2 == 0]
-
-print(square)
+num_list = [32,12,54,23,12,2,5,90]
+print(f"The Second largest number is {second_largest(num_list)}")
 
 def find_duplicates(numbers):
     duplicates = []
@@ -188,22 +146,30 @@ def find_duplicates(numbers):
         if num in seen and num not in duplicates:
             duplicates.append(num)
         seen.add(num)
+
     return duplicates 
 
-num_list = [3,43,1,343,2,13,4,2,3,43,1]
-print(f"Duplicates numbers: {find_duplicates(num_list)}")
+num_list = [14,36,44,22,44,12,12,34,23,32]
+print(f"Duplicate numbers: {find_duplicates(num_list)}")        
 
+def are_anagrams(str1,str2):
+    str1 = str1.replace(" ","").lower()
+    str2 = str2.replace(" ", "").lower()
 
+    return sorted(str1) == sorted(str2)
+
+print(are_anagrams("Listen", "Silent"))
+print(are_anagrams("Hello", "World"))
 
 def count_vowels(text):
-    vowels = "aeiouAEIOU"
+    vowels = "AEIOUaeiou"
     count = 0
     for char in text:
         if char in vowels:
             count += 1
     return count
 
-print(count_vowels("hello"))       
+print(count_vowels("system is malfunctioning"))
 
 def word_length(word_list):
     word_dict = {}
@@ -211,5 +177,7 @@ def word_length(word_list):
         word_dict[word] = len(word)
     return word_dict
 
-words = ["Charlotte", "Boi","Marie"] 
-print(word_length(words))    
+words = ["Charlotte", "Anna", "Scarlet"]    
+print(word_length(words))
+
+
